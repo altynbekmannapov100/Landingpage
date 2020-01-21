@@ -1,4 +1,10 @@
 .nawbar
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  background-color: #fff
+  
   &-wrap
     display: flex
     align-items: center
@@ -21,6 +27,25 @@
     text-decoration: none
 
 .menu
+  position: fixed
+  z-index: -1
+  top: 80px
+  left: 0
+  padding: 16px 0
+  width: 100%
+  background-color: $primary
+  transition: 0.2s
+  transform: translateX(-100%)
+  &__naw
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+  &__link
+    text-decoration: none
+    font-size: 17px
+    text-transform: uppercase
+    color: #ffffff
   &-button
     display: flex
     flex-direction: column
@@ -28,16 +53,16 @@
     justify-content: center
     background-color: transparent
     border: none
-    border-right:  1px solid rgba( #510bba,0.1 )
+    border-right: 1px solid rgba( #510bba,0.1 )
     border-left: 1px solid rgba( #510bba,0.1 )
     height: 80px
     width: 70px
     &__line
-     display: block
-     width: 20px
-     height: 3px
-     background-color: #89a9eb
-     margin: 2px 0
+      display: block
+      width: 20px
+      height: 3px
+      background-color: #89a9eb
+      margin: 2px 0
 
 .logo
   &__text
